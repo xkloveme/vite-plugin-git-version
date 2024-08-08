@@ -1,15 +1,75 @@
 {
-  "name": "playground",
+  "name": "vite-plugin-git-version",
   "type": "module",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.6",
+  "private": false,
+  "packageManager": "pnpm@7.2.1",
+  "description": "Automatically put the version file in your project dist folder",
+  "author": "xkloveme <xkloveme@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/xkloveme/vite-plugin-git-version#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xkloveme/vite-plugin-git-version.git"
+  },
+  "bugs": "https://github.com/xkloveme/vite-plugin-git-version/issues",
+  "keywords": [
+    "vite-plugin",
+    "version"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "rimraf dist && unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "play": "vite playground",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "vite": "^2.9.0 || ^3.0.0 || ^4.0.0 || ^5.0.0"
+  },
+  "dependencies": {
+    "debug": "^4.3.6"
   },
   "devDependencies": {
-    "typescript": "^4.6.4",
-    "vite": "^5.4.0"
+    "@antfu/eslint-config": "^2.24.1",
+    "@antfu/ni": "^0.22.0",
+    "@antfu/utils": "^0.5.2",
+    "@types/debug": "^4.1.7",
+    "@types/node": "^22.1.0",
+    "bumpp": "^9.4.2",
+    "eslint": "^9.8.0",
+    "esno": "^4.7.0",
+    "pnpm": "^9.7.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.4",
+    "unbuild": "^2.0.0",
+    "vite": "^5.4.0",
+    "vitest": "^2.0.5"
   }
 }
