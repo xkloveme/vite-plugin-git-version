@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-git-version",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "packageManager": "pnpm@7.2.1",
   "description": "Automatically put the version file in your project dist folder",
@@ -9,7 +9,7 @@
   "license": "MIT",
   "homepage": "https://github.com/xkloveme/vite-plugin-git-version#readme",
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": {
     "type": "git",
