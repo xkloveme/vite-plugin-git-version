@@ -25,7 +25,7 @@ export interface Options {
   fileName?: string
 }
 
-function vitePluginVersion(options: Options = {}): Plugin {
+function vitePluginGitVersion(options: Options = {}): Plugin {
   const {
     packageJsonPath = join(process.cwd(), 'package.json'),
     field = 'version',
@@ -100,4 +100,4 @@ function vitePluginVersion(options: Options = {}): Plugin {
   }
 }
 
-export default vitePluginVersion
+export default vitePluginGitVersion

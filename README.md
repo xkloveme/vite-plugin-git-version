@@ -29,11 +29,11 @@ Add plugin to your `vite.config.ts`:
 ```ts
 // vite.config.ts
 import { defineConfig } from 'vite'
-import versionPlugin from 'vite-plugin-git-version'
+import versionGitPlugin from 'vite-plugin-git-version'
 
 export default defineConfig({
   plugins: [
-    versionPlugin(),
+    versionGitPlugin(),
   ],
 })
 
@@ -41,4 +41,4 @@ export default defineConfig({
 
 ## License
 
-[MIT](./LICENSE) License © 2022 [YRM](https://github.com/xkloveme)
+[MIT](./LICENSE) License © 2024 [xkloveme](https://github.com/xkloveme)
