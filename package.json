@@ -9,7 +9,7 @@
   "license": "MIT",
   "homepage": "https://github.com/xkloveme/vite-plugin-git-version#readme",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
