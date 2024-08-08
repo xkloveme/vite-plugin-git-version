@@ -8,6 +8,9 @@
   "author": "xkloveme <xkloveme@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/xkloveme/vite-plugin-git-version#readme",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xkloveme/vite-plugin-git-version.git"
