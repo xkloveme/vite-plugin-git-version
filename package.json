@@ -3,7 +3,6 @@
   "type": "module",
   "version": "1.0.6",
   "private": false,
-  "packageManager": "pnpm@9.7.0",
   "description": "Automatically put the version file in your project dist folder",
   "author": "xkloveme <xkloveme@gmail.com>",
   "license": "MIT",

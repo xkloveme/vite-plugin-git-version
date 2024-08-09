@@ -1,28 +1,27 @@
 <h1 align="center">vite-plugin-git-version</h1>
 
 <p align="center">
-A Vite plugin that focuses on generating packaging information for Git projects.
+  一个专注于生成 Git 项目打包信息的 Vite 插件。
 </p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/vite-plugin-git-version">
-    <img src="https://img.shields.io/npm/v/vite-plugin-git-version?color=orange&label=" alt="version" />
+    <img src="https://img.shields.io/npm/v/vite-plugin-git-version?color=orange&label=" alt="版本" />
   </a>
   <a href="https://github.com/qmhc/vite-plugin-git-version/blob/main/LICENSE">
-    <img src="https://img.shields.io/npm/l/vite-plugin-git-version" alt="license" />
+    <img src="https://img.shields.io/npm/l/vite-plugin-git-version" alt="许可证" />
   </a>
 </p>
 
+**中文** | [English](./README.md)
 
-**English** | [中文](./README.zh-CN.md)
+## 更适合与华通云开发工具搭配使用
 
-## It is better to use with watone tools power builder
+[Microsoft Store 下载](https://microsoftedge.microsoft.com/addons/detail/%E5%8D%8E%E9%80%9A%E4%BA%91%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/afmbapanbkfkkpknjdepbafobedckoeg?hl=zh-CN)
 
-[Microsoft Store Download](https://microsoftedge.microsoft.com/addons/detail/%E5%8D%8E%E9%80%9A%E4%BA%91%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/afmbapanbkfkkpknjdepbafobedckoeg?hl=zh-CN)
+[使用文档](https://wt-front-end.github.io/wt-docs/wt-edge.html)
 
-[Use Documentation](https://wt-front-end.github.io/wt-docs/wt-edge.html)
-
-Get the `version` information from `package.json`, then automatically put the version file `version.json` in your project dist folder when packaging.
+从 `package.json` 获取 `version` 信息，并在打包时自动将版本文件 `version.json` 放入项目 dist 文件夹。
 
 ```json
 // package.json
@@ -45,10 +44,11 @@ Get the `version` information from `package.json`, then automatically put the ve
 }
 ```
 
-## Install
+## 安装
 ```bash
 pnpm add vite-plugin-git-version
 ```
+
 ```bash
 yarn add vite-plugin-git-version
 ```
@@ -57,7 +57,7 @@ yarn add vite-plugin-git-version
 npm i vite-plugin-git-version
 ```
 
-Add plugin to your `vite.config.ts` or `vite.config.js`:
+在您的 `vite.config.ts` 或 `vite.config.js` 中添加插件：
 
 ```ts
 // vite.config.ts
@@ -72,6 +72,6 @@ export default defineConfig({
 
 ```
 
-## License
+## 许可证
 
 [MIT](./LICENSE) License © 2024 [xkloveme](https://github.com/xkloveme)
