@@ -1,9 +1,9 @@
 {
   "name": "vite-plugin-git-version",
   "type": "module",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
-  "packageManager": "pnpm@7.2.1",
+  "packageManager": "pnpm@9.7.0",
   "description": "Automatically put the version file in your project dist folder",
   "author": "xkloveme <xkloveme@gmail.com>",
   "license": "MIT",
@@ -17,8 +17,11 @@
   },
   "bugs": "https://github.com/xkloveme/vite-plugin-git-version/issues",
   "keywords": [
+    "vite",
     "vite-plugin",
     "vite-plugin-git-version",
+    "git",
+    "project",
     "version"
   ],
   "sideEffects": false,
@@ -57,14 +60,11 @@
   "peerDependencies": {
     "vite": "^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0"
   },
-  "dependencies": {
-    "debug": "^4.3.6"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@antfu/eslint-config": "^2.24.1",
-    "@antfu/ni": "^0.22.0",
-    "@antfu/utils": "^0.5.2",
-    "@types/debug": "^4.1.7",
+    "@antfu/eslint-config": "^2.25.0",
+    "@antfu/ni": "^0.22.1",
+    "@antfu/utils": "^0.7.10",
     "@types/node": "^22.1.0",
     "bumpp": "^9.4.2",
     "eslint": "^9.8.0",
