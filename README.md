@@ -6,6 +6,7 @@
 
 [微软商店下载](https://microsoftedge.microsoft.com/addons/detail/%E5%8D%8E%E9%80%9A%E4%BA%91%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/afmbapanbkfkkpknjdepbafobedckoeg?hl=zh-CN)
 
+[使用文档](https://wt-front-end.github.io/wt-docs/wt-edge.html)
 
 Get the `version` information from `package.json`, then automatically put the version file `version.json` in your project dist folder when packaging.
 
@@ -13,6 +14,7 @@ Get the `version` information from `package.json`, then automatically put the ve
 // package.json
 {
   // ...
+  "name": "vite-plugin-git-version",
   "version": "0.0.1"
 }
 ```
@@ -22,21 +24,27 @@ Get the `version` information from `package.json`, then automatically put the ve
 ```
 
 ## Install
+```bash
+pnpm add vite-plugin-git-version
+```
+```bash
+yarn add vite-plugin-git-version
+```
 
 ```bash
 npm i vite-plugin-git-version
 ```
 
-Add plugin to your `vite.config.ts`:
+Add plugin to your `vite.config.ts` or `vite.config.js`:
 
 ```ts
 // vite.config.ts
 import { defineConfig } from 'vite'
-import versionGitPlugin from 'vite-plugin-git-version'
+import VersionGitPlugin from 'vite-plugin-git-version'
 
 export default defineConfig({
   plugins: [
-    versionGitPlugin(),
+    VersionGitPlugin(),
   ],
 })
 
