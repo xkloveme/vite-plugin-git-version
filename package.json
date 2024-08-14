@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-git-version",
   "type": "module",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": false,
   "description": "Automatically put the version file in your project dist folder",
   "author": "xkloveme <xkloveme@gmail.com>",
