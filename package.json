@@ -50,7 +50,7 @@
     "dev": "unbuild --stub",
     "lint": "eslint .",
     "play": "vite playground",
-    "release": "bumpp && npm publish",
+    "release": "npm run build && bumpp && npm publish",
     "start": "esno src/index.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit"
